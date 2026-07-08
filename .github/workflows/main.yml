@@ -24,4 +24,5 @@ jobs:
       - name: Execução em Todos
         run: ech "Execução em todos"
       - name: Envio de Erros
+        if: $ {{ failure () }}
         run: echo "Envio de erro"

@@ -16,5 +16,5 @@ jobs:
       - name: Exibição da versao e da plataforma
         run: |
           node --version
-          echo ${{ runner.os }}
+          echo ${{ runner.OS }}
     

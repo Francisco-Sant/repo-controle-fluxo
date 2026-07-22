@@ -8,8 +8,8 @@ on:
         default: pipeline-aula
 jobs:
   exemplo-fluxo-execucao-01:
-  concurrency: ${{ inputs.chave }}
     runs-on: ubuntu-latest
+    concurrency: ${{ inputs.chave }}
     steps:
       - name: Execução do job teste
         run: |
